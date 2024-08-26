@@ -49,8 +49,23 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Melhoria na eficiência e qualidade: O uso da IA para realizar trabalhos acadêmicos pode aumentar a eficiência dos estudantes ao ajudá-los a organizar informações e encontrar fontes relevantes, resultando em trabalhos acadêmicos de maior qualidade.",
-                afirmação: "Acha melhor, pois facilitaria o tempo, ajudaria os estudantes a ter"
+                afirmação: "Acha melhor, pois facilitaria o tempo.",
             }
         ]
+    },    
+];
+
+
+let atual = 0;
+let perguntaAtual;
+let historiaFinal = "";
+
+function mostraPergunta() {
+    if (atual >= perguntaAtual.length) {
+        mostraResultado();
+        return;
     }
-]
+    perguntasAtual1 = perguntas [atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent
+}
